@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div id="app-container">
+      <div id="backgroundEffect" class="background-effect hidden"></div>
+      <div id="backgroundSuccess" class="background-success hidden"></div>
+
+      <div id="popupMenu" class="menu">
+        <!-- Your menu content here -->
+      </div>
+
+      <form id="dataForm">
+        <input type="text" id="inputField" placeholder="Enter Data" />
+        <p id="errorMessage" class="hidden">
+          Incorrect data! <br />
+          code is definitely not <b>Matthew</b> ;)
+        </p>
+
+        <!-- More form elements if needed -->
+      </form>
+
+      <audio
+        id="bowserMusic"
+        src="./assets/Super Mario World Music - Castle.mp3"
+        loop
+      ></audio>
+      <audio
+        id="marioMusic"
+        src="./assets/Super Mario Bros 3 OST - Athletic.mp3"
+        loop
+      ></audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

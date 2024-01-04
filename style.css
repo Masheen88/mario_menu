@@ -1,0 +1,63 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
+#errorMessage {
+  color: azure;
+}
+
+.fadeIn {
+  animation: fadeInAnimation 1s;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Background Effects */
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.background-effect,
+.background-success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1; /* Ensure it's behind your content */
+  transition: opacity 1s ease-in-out;
+}
+
+.background-effect {
+  background: url("./assets/bowser.webp") no-repeat center center;
+  background-size: cover;
+}
+
+.background-success {
+  background: url("./assets/mario.webp") no-repeat center center;
+  background-size: cover;
+}
